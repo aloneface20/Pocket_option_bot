@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: telegram-pocketoption-bot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
+    envVars:
+      - key: BOT_TOKEN
+        value: REPLACE_WITH_YOUR_BOT_TOKEN
+      - key: USER_ID
+        value: REPLACE_WITH_YOUR_USER_ID
